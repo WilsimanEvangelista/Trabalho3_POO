@@ -4,13 +4,15 @@ public class Venda {
     private double desconto;
     private Data d;
     private String chassi;
+    private Vendedor vendedor;
 
-    public Venda(Veiculo veiculo, Cliente cliente, double desconto, int dia, int mes, int ano, String chassi) {
+    public Venda(Veiculo veiculo, Cliente cliente, double desconto, int dia, int mes, int ano, String chassi, Vendedor vendedor) {
         this.veiculo = veiculo;
         this.cliente = cliente;
         this.desconto = desconto;
         this.d = new Data(dia, mes, ano);
         this.chassi = chassi;
+        this.vendedor = vendedor;
     }
 
     public Veiculo getVeiculo() {
@@ -19,6 +21,10 @@ public class Venda {
 
     public Cliente getCliente() {
         return cliente;
+    }
+
+    public Vendedor getVendedor() {
+        return vendedor;
     }
 
     public Data getData() {

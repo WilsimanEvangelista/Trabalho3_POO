@@ -1,16 +1,17 @@
+import java.util.List;
 import java.util.ArrayList;
 
 public class Vendedor extends Funcionario {
     private double comissao;
-    private ArrayList<Venda> vendidos;
+    private List<Venda> vendidos;
 
     public Vendedor(String nome, String cpf, int dia, int mes, int ano, double salario, double comissao) {
         super(nome, cpf, dia, mes, ano, salario);
         this.comissao = comissao;
-        this.vendidos = new ArrayList<Venda>();
+        this.vendidos = new ArrayList<>();
     }
 
-    public ArrayList<Venda> getVendidos() {return this.vendidos;}
+    public List<Venda> getVendidos() {return this.vendidos;}
 
     public void addVenda(Venda v) {
         vendidos.add(v);
@@ -18,10 +19,6 @@ public class Vendedor extends Funcionario {
 
     public double getComissao() {
         return comissao;
-    }
-
-    public void setComissao(double comissao) {
-        this.comissao = comissao;
     }
 
     public double comissaoTotal(int mes, int ano) {
@@ -49,6 +46,6 @@ public class Vendedor extends Funcionario {
     }
 
     public String toString() {
-        return nome + " - CPF: " + cpf + " - Comissão: " + comissao;
+        return super.toString;
     }
 }

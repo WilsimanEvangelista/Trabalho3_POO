@@ -10,12 +10,12 @@ public class Gerente extends Funcionario {
         return senha;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
     public boolean validarAcesso(String senhaDigitada) {
         return this.senha.equals(senhaDigitada);
+    }
+
+    public double getSalario(int mes, int ano) {
+        return salario;
     }
 
     public String toString() {

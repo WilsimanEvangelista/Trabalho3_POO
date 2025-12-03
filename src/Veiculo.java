@@ -1,4 +1,4 @@
-public class Veiculo {
+public abstract class Veiculo {
     protected String marca;
     protected String modelo;
     protected int anoFab;
@@ -16,11 +16,29 @@ public class Veiculo {
     }
 
     public double getValor() {
-        return valor;
+        return this.valor;
     }
 
-    public int getAutonomia() {
-        return 0;
+    public abstract int getAutonomia();
+
+    public String getMarca() {
+        return this.marca;
+    }
+    
+    public String getModelo() {
+        return this.modelo;
+    }
+    
+    public int getAnoFab() {
+        return this.anoFab;
+    }
+    
+    public int getMesFab() {
+        return this.mesFab;
+    }
+    
+    public int getAnoMod() {
+        return this.anoMod;
     }
 
     public String toString(){

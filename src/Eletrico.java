@@ -9,6 +9,14 @@ public class Eletrico extends Veiculo {
         this.capacidadeBat = capacidadeBat;
     }
 
+     public double getAutonomiaBat() {
+        return autonomiaBat;
+    }
+    
+    public double getCapacidadeBat() {
+        return capacidadeBat;
+    }
+
     public int getAutonomia() {
         return (int) Math.round(autonomiaBat);
     }

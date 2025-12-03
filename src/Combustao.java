@@ -8,6 +8,14 @@ public class Combustao extends Veiculo {
         this.autonomiaComb = autonomiaComb;
         this.capacidadeComb = capacidadeComb;
     }
+    public double getAutonomiaComb() {
+        return autonomiaComb;
+    }
+    
+    public double getCapacidadeComb() {
+        return capacidadeComb;
+    }
+    
     public int getAutonomia() {
         return (int) Math.round(autonomiaComb);
     }

@@ -14,6 +14,22 @@ public class Hibrido extends Veiculo {
         this.capacidadeBat = capacidadeBat;
     }
 
+    public double getAutonomiaComb() {
+        return autonomiaComb;
+    }
+    
+    public double getCapacidadeComb() {
+        return capacidadeComb;
+    }
+    
+    public double getAutonomiaBat() {
+        return autonomiaBat;
+    }
+    
+    public double getCapacidadeBat() {
+        return capacidadeBat;
+    }
+
     public int getAutonomia() {
         return (int) Math.round(autonomiaComb + autonomiaBat);
     }

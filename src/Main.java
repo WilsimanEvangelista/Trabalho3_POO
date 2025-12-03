@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         Entrada io = new Entrada();
         Sistema s = new Sistema();
+        s.carregarDados();
 
         int op = io.menu();
 
@@ -27,5 +28,7 @@ public class Main {
 
             op = io.menu();
         }
+        s.salvarDados();
+        System.out.println("Dados salvos com sucesso!");
     }
 }
