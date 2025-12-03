@@ -1,7 +1,8 @@
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-import java.util.Scanner;
+import java.time.LocalDate;
+
 
 /**
  * Classe com as rotinas de entrada e saída do projeto

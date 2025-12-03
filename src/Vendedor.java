@@ -46,6 +46,6 @@ public class Vendedor extends Funcionario {
     }
 
     public String toString() {
-        return super.toString;
+        return super.toString();
     }
 }

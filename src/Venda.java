@@ -6,11 +6,11 @@ public class Venda {
     private String chassi;
     private Vendedor vendedor;
 
-    public Venda(Veiculo veiculo, Cliente cliente, double desconto, int dia, int mes, int ano, String chassi, Vendedor vendedor) {
+    public Venda(Veiculo veiculo, Cliente cliente, double desconto, Data d, String chassi, Vendedor vendedor) {
         this.veiculo = veiculo;
         this.cliente = cliente;
         this.desconto = desconto;
-        this.d = new Data(dia, mes, ano);
+        this.d = d;
         this.chassi = chassi;
         this.vendedor = vendedor;
     }
